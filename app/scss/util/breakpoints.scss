@@ -1,0 +1,26 @@
+// 640px, 1024px, 1400px
+$breakpoints-up: (
+    "medium": "40em",
+    "large": "64em",
+    "x-large": "87.4375em"
+);
+
+// 639px, 1023px, 1399px
+$breakpoints-down: (
+    "small": "39.937em",
+    "medium": "63.937em",
+    "large": "87.437em"
+);
+
+// @mixin is used to load reusable code that you want to use multiple times in your codebase.
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up,$size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (min-width: map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
