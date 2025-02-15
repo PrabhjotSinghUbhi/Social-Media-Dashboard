@@ -1,7 +1,7 @@
 {
-  "name": "social-media-dasboard",
+  "name": "social-media-dashboard",
   "version": "1.0.0",
-  "description": "Challange from FEM to make a Social media dashboard with dark light toggle",
+  "description": "Challenge from FEM to make a Social media dashboard with dark light toggle",
   "main": "script.js",
   "scripts": {
     "test": "test"
@@ -26,11 +26,14 @@
     "browser-sync": "^3.0.3",
     "cssnano": "^7.0.6",
     "dart-sass": "^1.25.0",
-    "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.0",
     "gulp-terser": "^2.1.0",
-    "postcss": "^8.5.1"
+    "postcss": "^8.5.1",
+    "sass": "^1.85.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
